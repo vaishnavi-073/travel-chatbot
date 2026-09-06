@@ -98,7 +98,7 @@ def find_best_match(user_words):
 # -----------------------------
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html").read()
 
 
 @app.route("/get", methods=["POST"])
